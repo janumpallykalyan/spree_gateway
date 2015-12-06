@@ -1,5 +1,5 @@
 module Spree
-  class Gateway::PayUbiz < Gateway
+  class Gateway::PayuIn < Gateway
     preference :login, :string
     preference :password, :string
 
@@ -7,6 +7,6 @@ module Spree
       ActiveMerchant::Billing::PayuInGateway
     end
 
-    
+
   end
 end
