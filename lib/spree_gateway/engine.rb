@@ -32,6 +32,7 @@ module SpreeGateway
       app.config.spree.payment_methods << Spree::Gateway::UsaEpayTransaction
       app.config.spree.payment_methods << Spree::Gateway::Worldpay
       app.config.spree.payment_methods << Spree::Gateway::PayuIn
+      app.config.spree.payment_methods << Spree::Gateway::SecurionPayGateway
     end
 
     def self.activate
